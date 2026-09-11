@@ -1,0 +1,50 @@
+{
+  "name": "@resolvingarchitecture/i2p-client",
+  "version": "0.1.0",
+  "description": "I2P client for 1M5 (TypeScript / Node) - routes envelopes over I2P as repliable datagrams via a router's SAMv3 bridge. Node-only, see README.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "src",
+    "README.md",
+    "DESIGN.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc -p tsconfig.json",
+    "test": "node --import tsx --test test/*.test.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "i2p",
+    "sam",
+    "samv3",
+    "anonymity",
+    "1m5",
+    "resolving-architecture"
+  ],
+  "author": "Brian Taylor <brian@resolvingarchitecture.io>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/resolvingarchitecture/i2p-ts.git"
+  },
+  "homepage": "https://resolvingarchitecture.io",
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
