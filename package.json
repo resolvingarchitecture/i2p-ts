@@ -32,13 +32,13 @@
     "1m5",
     "resolving-architecture"
   ],
-  "author": "Brian Taylor <brian@resolvingarchitecture.io>",
+  "author": "Brian Taylor <brian@resolvingarchitecture.dev>",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/resolvingarchitecture/i2p-ts.git"
   },
-  "homepage": "https://resolvingarchitecture.io",
+  "homepage": "https://resolvingarchitecture.dev",
   "engines": {
     "node": ">=20"
   },
